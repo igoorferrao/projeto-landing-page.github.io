@@ -112,7 +112,7 @@ nav img:hover {
 /*--------- MEDIA SECTION---------*/
 /* MOBILE STYLE */
 
-@media only screen and (max-width: 521px) {
+@media only screen and (max-width: 850px) {
     body {
         background-image: url(images/bg-mobile.svg);
         background-size: 100%;
@@ -145,10 +145,7 @@ nav img:hover {
     
     
 }
-/* TABLET STYLE */
 
-@media only screen and (min-width: 522px) and (max-width: 850px) {}
-/* DESKTOP STYLE */
 
 @media only screen and (min-width: 851px) {
 
@@ -171,7 +168,8 @@ nav img:hover {
     }
 
     .image-mockup img {
-        display: block;
+        max-width:100%;
+	    height: auto;
       
     }
 
@@ -197,6 +195,7 @@ nav img:hover {
 
     .main-footer {
         justify-content: flex-end;
+        padding-right: 100px;
     }
 
     .credit {
