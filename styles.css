@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background: url(images/bg-desktop.svg) no-repeat center center fixed;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin:  0 auto;
+}
+
+h1 {
+    font-family: "Poppins";
+    font-weight: 700;
+}
+nav {
+    padding: 40px;
+    margin-bottom: 35px;
+}
+
+nav img {
+    width: 200px;
+    /* border: 1px solid red; */
+}
+
+nav img:hover {
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.container .image-mockup {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.container>.image-mockup > img {
+    width: 400px;
+}
+
+.content {
+    margin-bottom: 60px;
+}
+
+.button > a  {
+    padding: 10px 90px;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.button > a:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.fa-border:first-of-type{
+    padding: 8px 11px;
+}
+.fa-border {
+    border-radius: 50px;
+    padding: 8px;
+    margin: 0 10px;
+}
+
+.main-footer {
+    margin-bottom: 10px;
+}
+
+.credit{
+    
+    width: 100%;
+}
+
+.credit > p > a {
+    color: #fff;
+    font-weight: bold;
+}
+.credit > p > a:hover {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline  ;
+}
+
+
+.main-footer i:hover {
+    cursor: pointer;
+}
+
+/*--------- MEDIA SECTION---------*/
+/* MOBILE STYLE */
+
+@media only screen and (max-width: 521px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-size: 100%;
+        background-position: center top;
+    }
+   
+    .content {
+        text-align: center;        
+    }
+
+    .content h1{
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        padding: 0 100px;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+
+    .main-footer {
+        display: flex;
+        width: 100%;;
+        
+        justify-content: center;
+    }
+
+
+    
+    
+    
+}
+/* TABLET STYLE */
+
+@media only screen and (min-width: 522px) and (max-width: 850px) {}
+/* DESKTOP STYLE */
+
+@media only screen and (min-width: 851px) {
+
+
+    section {
+        display: flex;
+        
+    }
+
+    .container{
+        display: flex;
+        
+    
+    }
+
+    .image-mockup,
+    .content {
+        flex: 1;
+        
+    }
+
+    .image-mockup img {
+        display: block;
+      
+    }
+
+    .content {
+        padding: 40px 0 0 40px;
+        width: 100%;
+    }
+
+    .content h1 {
+        margin-bottom: 20px;
+    }
+
+    .content p{
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
+
+    footer {
+        
+        display: flex;
+        width: 100%;
+    }
+
+    .main-footer {
+        justify-content: flex-end;
+    }
+
+    .credit {
+        justify-content: center;
+    }
+    
+
+
+}
