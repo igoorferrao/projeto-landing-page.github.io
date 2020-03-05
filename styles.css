@@ -50,15 +50,7 @@ nav img:hover {
     /* border: 1px solid red; */
 }
 
-.container .image-mockup {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-}
 
-.container>.image-mockup > img {
-    width: 400px;
-}
 
 .content {
     margin-bottom: 60px;
@@ -140,7 +132,15 @@ nav img:hover {
         justify-content: center;
     }
 
-
+    .container .image-mockup {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    
+    .container>.image-mockup > img {
+        width: 400px;
+    }
     
     
     
@@ -152,25 +152,30 @@ nav img:hover {
 
     section {
         display: flex;
-        
+        height: 70vh;
     }
 
     .container{
-        display: flex;
-        
-    
+        display: flex;   
     }
 
-    .image-mockup,
+   .image-mockup{
+        border: 1px solid blue;
+        flex: 1;
+        height: 100%;
+    }
+    /* é aqui que tem que arrumar...  */
+
+    .image-mockup > img {
+        display: block;
+        border: 1px solid red;
+        margin: 0 auto;
+        max-width:100%;
+        height:auto;
+    }
+
     .content {
         flex: 1;
-        
-    }
-
-    .image-mockup img {
-        max-width:100%;
-	    height: auto;
-      
     }
 
     .content {
