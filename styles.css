@@ -160,7 +160,6 @@ nav img:hover {
     }
 
    .image-mockup{
-        border: 1px solid blue;
         flex: 1;
         height: 100%;
     }
@@ -168,7 +167,6 @@ nav img:hover {
 
     .image-mockup > img {
         display: block;
-        border: 1px solid red;
         margin: 0 auto;
         max-width:100%;
         height:auto;
